@@ -1,0 +1,127 @@
+html,
+body {
+  background-color: #34003b;
+}
+
+.area {
+  position: relative;
+  width: 780px;
+  height: 780px;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle-area {
+  border: 1px dashed #ffffff;
+}
+
+.circle-area,
+.circle-area + div,
+.circle-area + div > div {
+  position: absolute;
+}
+
+.circle-area,
+.circle-area + div {
+  top: 50%;
+  left: 50%;
+}
+
+.circle-area + div > div {
+  top: 0;
+  left: 50%;
+}
+
+.circle-area,
+.circle-area + div div,
+#circle-areaborder {
+  border-radius: 50%;
+}
+
+#circle1-ball1 {
+  margin-top: -13.5px;
+  margin-left: -13.5px;
+  height: 25px;
+  width: 25px;
+  background-color: #ffffff;
+}
+
+.ball-circle-area,
+.circle1-ball1-spin {
+  margin-top: -185px;
+  margin-left: -185px;
+  width: 370px;
+  height: 370px;
+}
+
+#circle1-ball2 {
+  margin-top: -13.5px;
+  margin-left: -13.5px;
+  height: 25px;
+  width: 25px;
+  background-color: #db3434;
+}
+
+.ball-circle-area,
+.circle1-ball2-spin {
+  margin-top: -185px;
+  margin-left: -185px;
+  width: 370px;
+  height: 370px;
+}
+
+#circle2-ball2 {
+  margin-top: -13.5px;
+  margin-left: -13.5px;
+  height: 25px;
+  width: 25px;
+  background-color: #4aff80;
+}
+
+.circle2-circle-area,
+.circle2-ball2-spin {
+  width: 280px;
+  height: 280px;
+  margin-left: -140px;
+  margin-top: -140px;
+}
+
+#circle2-ball1 {
+  margin-top: -13.5px;
+  margin-left: -13.5px;
+  height: 25px;
+  width: 25px;
+  background-color: #ffee00;
+}
+
+.circle2-circle-area,
+.circle2-ball1-spin {
+  width: 280px;
+  height: 280px;
+  margin-left: -140px;
+  margin-top: -140px;
+}
+
+@keyframes spin-right {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.circle1-ball1-spin {
+  animation: spin-right 10s linear infinite;
+}
+
+.circle1-ball2-spin {
+  animation: spin-right 6s linear infinite;
+}
+
+.circle2-ball2-spin {
+  animation: spin-right 8s linear infinite;
+}
+
+.circle2-ball1-spin {
+  animation: spin-right 10s linear infinite;
+}
