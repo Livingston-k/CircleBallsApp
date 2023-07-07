@@ -1,4 +1,4 @@
-# vision-interview
+# Circles and balls Challenge
 
 Two cicles with two balls rotating around at different speeds.
 
